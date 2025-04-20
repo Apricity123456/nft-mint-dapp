@@ -17,7 +17,7 @@ contract MyNFT is ERC721URIStorage, Ownable {
         address recipient,
         string memory tokenURI
     ) public onlyOwner {
-        _tokenIds += 1; // tokenId 从 1 开始
+        _tokenIds += 1;
         uint256 newItemId = _tokenIds;
 
         _mint(recipient, newItemId);
